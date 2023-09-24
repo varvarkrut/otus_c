@@ -1,0 +1,10 @@
+--- /home/ivan/Downloads/clib_bug/src/common/clib-package.c	2020-09-08 02:51:24.000000000 +0300
++++ /home/ivan/Downloads/clib/src/common/clib-package.c	2023-09-24 15:17:52.305417400 +0300
+@@ -1580,6 +1580,7 @@
+   }
+
+ cleanup:
++clib_package_cleanup();
+   if (pkg_dir)
+     free(pkg_dir);
+   if (package_json)
